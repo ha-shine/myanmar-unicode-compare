@@ -11,11 +11,11 @@ new Vue({
         }
     },
     data: {
-        fonts: ['Angoun','Census','Chatu','ChatuLight','Gantgaw','Kamjing_2','Khyay','Kuttar',
+        fonts: ['Angoun','Chatu','ChatuLight','Gantgaw','Kamjing_2','Khyay','Kuttar',
         'MasterpieceUniRound','Mon3Anonta1','Myanmar3','MyanmarSansPro','MyanmarSquareLight',
         'MyanmarText','MyanmarYinmar','NamKhoneUnicode','Nayone','Njaun','NK_SSmart2','NK_SSmart3',
         'NK_SSmart4','NotoSansMyanmar','NotoSansMyanmarUI','Padauk','PadaukBook','Pauklay','Phetsot',
-        'Phiksel','PhikselSmooth','Ponenyet','Sabae','Sagar','Sanpya','Tagu','Tharlon','Thuriya','Waso','YoeYar'],
+        'Phiksel','PhikselSmooth','Ponenyet','Pyidaungsu','Sabae','Sagar','Sanpya','Tagu','Tharlon','Thuriya','Waso','YoeYar'],
         selectedFonts: [],
         active: 0
     },
