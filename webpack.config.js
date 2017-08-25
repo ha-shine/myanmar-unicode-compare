@@ -1,4 +1,5 @@
 const path = require('path');
+var CopyWebpackPlugin = require('copy-webpack-plugin');
 
 module.exports = {
     entry : './src/index.js',
@@ -14,9 +15,14 @@ module.exports = {
                 test: /\.ttf$/, 
                 loader: 'file-loader',
                 options: {
-                    name: 'fonts/[name].[ext]'
+                    name: './fonts/[name].[ext]'
                 }
             }
         ]
-    }
+    },
+    plugins: [
+        new CopyWebpackPlugin([
+            { from: 'src/fonts', to: 'fonts' }
+        ])
+    ]
 }
