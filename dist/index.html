@@ -1,0 +1,32 @@
+<!doctype html>
+
+<html lang="my">
+<head>
+  <meta charset="utf-8">
+
+  <title>Myanmar Unicode Compare</title>
+  <meta name="description" content="Compare the apperance between Myanmar Unicode Fonts">
+  <meta name="author" content="Htet Aung Shine">
+  <link href="css/fonts.css" rel="stylesheet" />
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.5.1/css/bulma.min.css">
+  <script src="https://unpkg.com/vue"></script>
+</head>
+
+<body>
+    <section class="section">
+        <div class="container" id="app">
+            <level-bar :active="active" @change-active="changeActive"></level-bar>
+            <table class="table">
+                <tbody>
+                    <tr is="font-line" v-for="(font, index) in selectedFonts" v-if="active === 0"  
+                        :font="font" @select-font="selectFont(index)"></tr>
+                    <tr is="font-line" v-for="(font, index) in selectedFonts" v-if="active === 1 && selectedFonts[index].selected"  
+                    :font="font" @select-font="selectFont(index)"></tr>
+                </tbody>
+            </table>
+        </div>
+    </section>
+    <script src="bundle.js"></script>
+</body>
+</html>

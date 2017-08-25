@@ -1,0 +1,30 @@
+{
+  "name": "myanmar_unicode_compare",
+  "version": "1.0.0",
+  "description": "Compare the apperance of myanmar unicode fonts",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "webpack --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ha-shine/myanmar-unicode-compare.git"
+  },
+  "author": "Htet Aung Shine",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ha-shine/myanmar-unicode-compare/issues"
+  },
+  "homepage": "https://github.com/ha-shine/myanmar-unicode-compare#readme",
+  "devDependencies": {
+    "css-loader": "^0.28.5",
+    "file-loader": "^0.11.2",
+    "vue-loader": "^13.0.4",
+    "vue-template-compiler": "^2.4.2",
+    "webpack": "^3.5.5"
+  },
+  "dependencies": {
+    "vue": "^2.4.2"
+  }
+}
